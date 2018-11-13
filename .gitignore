@@ -1,6 +1,6 @@
 
 *.xcf
-.\Bilder und Skizzen
-.\Bilderablage
-.\Grafik\Gallery
-.\Grafik\Thumbs
+Bilder und Skizzen/*.*
+Bilderablage/*.*
+Grafik/Thumbs/*.*
+Grafik/Gallery/*.*
