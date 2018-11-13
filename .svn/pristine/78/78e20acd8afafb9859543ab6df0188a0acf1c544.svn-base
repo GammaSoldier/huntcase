@@ -1,0 +1,224 @@
+<?php
+
+include_once '../config.php';
+include_once '../database.php';
+include_once '../templates.php';
+include_once 'dates.php';
+include_once 'pictures.php';
+include_once 'setlist.php';
+
+
+
+$Output = '';
+
+session_start();
+if( !isset( $_SESSION['LoggedIn'] ) ) {
+	$_SESSION['LoggedIn'] = false;
+}// if
+
+execute();
+$Content = array( 'CONTENT' => $Output );
+$Output = ParseTemplate( 'templates/site.htm', $Content );
+
+echo $Output;
+
+
+/***************************************************************************************************
+***************************************************************************************************/
+function execute() 
+{
+	
+	if( !isset($_REQUEST['action']) ) {
+		$Action = '';
+	}// if
+	else {
+		$Action = $_REQUEST['action'];
+	}// else
+
+	if( $_SESSION['LoggedIn'] == false ) {
+		if( $Action == 'login' ) {
+			if( LoginConfirm() == true ) {
+				PicturesUpdate();
+				header( 'Location: '.$_SERVER['PHP_SELF'] );
+			}// if
+		}// if
+		else {
+			Login();
+		}// else
+	}// if
+	else {
+		switch( $Action ) {
+		case 'logout':
+			$_SESSION['LoggedIn'] = false;
+			header( 'Location: index.php' );
+			break;
+			
+		// l o c a t i o n s ///////////////////////////////////////////////////////////////////////
+		case 'enternewlocation':
+			if( CheckNewLocation() == true ) {
+				header( 'Location: '.$_SERVER['PHP_SELF'] );
+			}// if
+			break;
+			
+		case 'confirmnewlocation':
+			if( $_REQUEST['btnsend'] == 'Yes' ) {
+				NewLocation();
+			}// if
+			header( 'Location: '.$_SERVER['PHP_SELF'] );
+			break;
+			
+		case 'editlocation':
+			EditLocation();
+			break;
+			
+		case 'modifylocation':
+			if( $_REQUEST['btnsend'] == 'Submit' ) {
+				ModifyLocation();
+				header( 'Location: '.$_SERVER['PHP_SELF'] );
+			}// if
+			else {
+				DeleteLocationConfirm();
+			}// else
+			break;
+			
+		case 'confirmlocationdeletion':
+			if( $_REQUEST['btnsend'] == 'Delete' ) {
+				DeleteLocation();
+			}// if
+			header( 'Location: '.$_SERVER['PHP_SELF'] );
+			break;
+
+		case 'enternewdate':
+			EnterNewDate();
+			break;
+			
+		case 'newdate':
+			if( NewDate()) {
+				header( 'Location: '.$_SERVER['PHP_SELF'] );
+			}// if
+			break;
+			
+		case 'deldate':
+			if( $_REQUEST['btnsend'] == 'Delete' ) {
+				DeleteDate();
+			}// if
+			if( $_REQUEST['btnsend'] == 'Cancel' ) {
+				CancelDate();
+			}// if
+			header( 'Location: '.$_SERVER['PHP_SELF'] );
+			break;
+			
+		case 'confirmdatedeletion':
+			ConfirmDateDeletion();
+			break;
+		
+		// p i c t u r e s /////////////////////////////////////////////////////////////////////////
+		case 'menupictures':
+			$page = isset($_REQUEST['page']) ? $_REQUEST['page'] : 0;
+			ListThumbs( $page );
+			break;
+		
+		case 'picturedelete_ask':
+			PictureDeleteAsk();
+			break;
+			
+		case 'picturedelete':
+			$error = PictureDelete();
+			if( $error != '' ) {
+				header( 'Location: index.php?action=pictureerror&no='.$error.'&page='.$_REQUEST['page'] );
+			}// if
+			else {
+				header( 'Location: index.php?action=menupictures&page='.$_REQUEST['page'] );
+			}// else
+			break;
+
+		case 'pictureerror':
+			PictureError();
+			break;
+			
+		case 'Send':
+			$error = PictureUpload();
+			if( $error != '' ) {
+				header( 'Location: index.php?action=pictureerror&no='.$error );
+			}// if
+			else {
+				header( 'Location: index.php?action=menupictures&page=9999' );
+			}// else
+			break;
+		
+		case 'picturetop':
+			PictureMoveTop( $_REQUEST['file'] );
+			header( 'Location: '.$_SERVER['PHP_SELF'].'?action=menupictures&page=0' );
+			
+			break;
+		case 'pictureup':
+			$page = isset($_REQUEST['page']) ? $_REQUEST['page'] : 0;
+			PictureMoveUp( $_REQUEST['file'] );
+			header( 'Location: '.$_SERVER['PHP_SELF'].'?action=menupictures&page='.$_REQUEST['page'] );
+			break;
+			
+		case 'picturedown':
+			$page = isset($_REQUEST['page']) ? $_REQUEST['page'] : 0;
+			PictureMoveDown( $_REQUEST['file'] );
+			header( 'Location: '.$_SERVER['PHP_SELF'].'?action=menupictures&page='.$_REQUEST['page'] );
+			break;
+			
+		case 'picturebottom':
+			PictureMoveBottom( $_REQUEST['file'] );
+			header( 'Location: '.$_SERVER['PHP_SELF'].'?action=menupictures&page=9999' );
+			break;
+		
+		// s e t l i s t ///////////////////////////////////////////////////////////////////////////
+		case 'setlist':
+			SetListEdit();
+			break;
+
+		case 'sendsetlist':
+			header( 'Location: '.$_SERVER['PHP_SELF'].'?action=setlist&result='.SetListSave( $_REQUEST['setlist']) );
+			
+			break;
+
+		
+		default:
+			ShowLists();
+		}// switch
+	}// else
+}// execute
+
+
+/***************************************************************************************************
+***************************************************************************************************/
+function LoginConfirm() 
+{
+	global $Output;
+	$RetVal = false;
+	
+	if( ($_REQUEST[ 'username' ] == ADMIN_USER ) && ($_REQUEST[ 'userpass' ] == ADMIN_PASSWORD )) {
+		$_SESSION['LoggedIn'] = true;
+		$RetVal = true;
+	}// if
+	else {
+		$Output .= 'Username or password not correct. Please retry.';
+	}// else
+	return $RetVal;
+}// Login
+
+/***************************************************************************************************
+***************************************************************************************************/
+function Login() 
+{
+	global $Output;
+	$Output .= '<table class="listing" align="center"><tr><th colspan="2">';
+	$Output .= 'Admin-Login: </th></tr>';
+	$Output .= '<tr><td ><br>';
+	
+	$Output .= '<form method="post" action="index.php?action=login">
+				<b>Name:</b>		<input type="text" name="username" maxlength="50" />
+				<b>Password:</b>	<input type="password" name="userpass" />
+				<input type="submit" name="btnsend" value="Submit" />
+				</form>';
+	$Output .= '<br></td></tr>';
+}// Login
+
+
+?>

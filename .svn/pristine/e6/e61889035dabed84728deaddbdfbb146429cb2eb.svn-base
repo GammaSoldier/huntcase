@@ -1,0 +1,33 @@
+
+<!-- Page content -->
+<table class="Content" align="center">
+
+<tr>
+
+	<td class="Content" valign="top" align="center">
+	<h1>So sieht's aus</h1>
+
+	<table width="100%" border="0" cellspacing="12" class="Center">
+
+		<tr valign="top"><td width="50%" align="left">
+			<%%BACK%%>
+		</td>	
+		<td width="50%" align="right">
+			<%%FORWARD%%>
+		</td></tr>	
+			
+		<tr><td colspan="2">
+			<img src="<%%IMAGE%%>" alt="<%%ALT%%>">
+		</td></tr>
+
+	</table>
+
+	<font size="-2">Fotos: Hermann Haberer / Andreas J&uuml;ttner</font>
+	</td>
+	</tr>
+</table>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+

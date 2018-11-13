@@ -1,0 +1,12 @@
+
+<br><strong> <%%TITLE%%> </strong><br>
+<br> 
+<%%NAVI%%><br>
+<br>
+<table class="list">
+
+	<%%ENTRIES%%>
+
+</table>
+<br>
+<%%NAVI%%>

@@ -1,0 +1,20 @@
+<tr valign="top">
+<td>
+	<!--  display date -->
+	<%%WEEKDAY%%> <font color="ffff00"><b> <%%DAY%%>. <%%MONTH%%>. <%%YEAR%%> </b> </font><br>
+	<!--  display time -->
+	<%%TIME%%> Uhr
+</td>
+
+<td>
+	<!--  display location -->
+	<b> <%%LOCATION%%> </b><br>
+
+	<!--  display address -->
+	<a href="http://maps.google.com?q=<%%GOOGLELINK%%>" target="_blank"> <%%ADDRESS%%> </a>
+</td>
+</tr>
+
+<tr><td colspan="2">
+	<img src="Grafik/SeperatorSmall.jpg" ALT="___________">
+</td></tr>

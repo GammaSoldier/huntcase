@@ -1,0 +1,107 @@
+07 December 2002;19:00 Uhr;Unionsbräu;Einsteinstr. 42, München 
+20 December 2002;21:00 Uhr;The Dub;Candidplatz 9, München 
+09 January 2003;20:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München 
+17 January 2003;21:00 Uhr;Shamrock;Trautenwolfstr. 6, München 
+08 February 2003;20:00 Uhr;Unionsbräu;Einsteinstr. 42, München 
+20 February 2003;20:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+07 March 2003;21:00 Uhr;Shamrock;Trautenwolfstr. 6, München 
+27 March 2003;20:00 Uhr ;Kilians Irish Pub;Frauenplatz 11, München 
+24 April 2003;20:00 Uhr ;Kilians Irish Pub;Frauenplatz 11, München 
+16 May 2003;21:00 Uhr;The Dub;Candidplatz 9, München 
+31 May 2003;21:00 Uhr;Bondi;Sonnenstr. 8, München 
+11 July 2003;21:30 Uhr;Bondi;Sonnenstr. 8, München 
+19 July 2003;21:00 Uhr;Shamrock;Trautenwolfstr. 6, München 
+25 July 2003;21:00 Uhr;Marienburg;Hohensalzaer Str. 1, München Daglfing
+09 August 2003;21:00 Uhr;Privatveranstaltung
+14 August 2003;20:00 Uhr ;Kilians Irish Pub;Frauenplatz 11, München 
+05 September 2003;21:00 Uhr;The Dub;Candidplatz 9, München 
+20 September 2003;21:00 Uhr;Shamrock;Trautenwolfstr. 6, München 
+17 October 2003;20:00 Uhr;Kaffee Giesing;Bergstr. 5, München 
+18 October 2003;20:00 Uhr;Kaffee Giesing;Bergstr. 5, München 
+31 October 2003;19:30 Uhr;Walchenseer;Walchenseeplatz 4, München 
+22 November 2003;20:30 Uhr;Stoa;Gollierstr. 38, München
+05 December 2003;20:00 Uhr;Unionsbräu;Einsteinstr. 42, München 
+06 December 2003;20:00 Uhr;Unionsbräu;Einsteinstr. 42, München 
+13 December 2003;20:30 Uhr;Marienburg;Hohensalzaer Str. 1, München Daglfing
+17 January 2004;21:00 Uhr;The Dub;Candidplatz 9, München
+30 January 2004;21:30 Uhr;K2;Streiflacher Straße 1, Germering
+05 February 2004;20:00 Uhr;Cafe Florian;Hohenzollernstr. 11, München 
+12 February 2004;21:00 Uhr;Fliegerbräu;Sonnenstr. 2, Feldkirchen bei München
+21 February 2004;20:00 Uhr ;Kilians Irish Pub;Frauenplatz 11, München 
+05 March 2004;22:00 Uhr;Fliegerbräu;Sonnenstr. 2, Feldkirchen bei München
+12 March 2004;20:00 Uhr;Unionsbräu;Einsteinstr. 42, München 
+13 March 2004;20:00 Uhr;Unionsbräu;Einsteinstr. 42, München 
+23 April 2005;21:00 Uhr;Cafe Original;Münchner Straße, Dachau
+13 May 2005; 21:00 Uhr;The Dub;Candidplatz 9, München
+16 May 2005; 16:00 Uhr;Wallner's;Römerstr. 11, Gilching
+01 July 2005;21:00 Uhr;Fällt leider aus.
+03 July 2005;16:00 Uhr;Wallner's;Römerstr. 11, Gilching
+06 July 2005;21:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+15 July 2005;21:00 Uhr;Lindenplatzl;Nimmerfallstr. 48, München
+05 August 2005;21:30 Uhr;Shamrock;Trautenwolfstr. 6, München 
+22 September 2005;21:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+29 December 2005;21:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+09 February 2006;20:30 Uhr;Airbräu;Flughafen München
+22 February 2006;20:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+03 March 2006;20:00 Uhr;Unionsbräu;Einsteinstr. 42, München
+04 March 2006;20:00 Uhr;Unionsbräu;Einsteinstr. 42, München
+07 April 2006;22:00 Uhr;The Dub;Candidplatz 9, München 
+20 April 2006;20:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+06 May 2006;20:00 Uhr;Eiscafe Gallo;Bürgermeister Grünwald Weg 3, Wolfratshausen
+21 June 2006;21:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+12 July 2006;21:00 Uhr;Privatveranstaltung
+28 July 2006;22:00 Uhr;Sinnflut Festival;Erding
+02 August 2006;21:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+12 August 2006;21:00 Uhr;Privatveranstaltung
+04 October 2006;20:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+14 October 2006;20:00 Uhr;Privatveranstaltung;Odenwald
+28 October 2006;20:00 Uhr;Marche;Badstraße 4, Bad Tölz
+06 December 2006;20:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+14 February 2007;20:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+22 February 2007;20:30 Uhr;Airbräu;Flughafen München
+09 March 2007;20:00 Uhr;Unionsbräu;Einsteinstr. 42, München
+10 March 2007;20:00 Uhr;Unionsbräu;Einsteinstr. 42, München
+05 May 2007;19:00 Uhr;Tag der offenen Tür Rotes Kreuz;Kybergstraße, Oberhaching
+20 June 2007;21:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+01 August 2007;21:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+11 August 2007;19:00 Uhr;Privatveranstaltung
+26 August 2007;17:00 Uhr;LiLaLu; Olympiapark Süd, Spiridon-Louis-Ring 100
+03 October 2007;20:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+27 October 2007;21:00 Uhr;Brückenwirt; Karlsberg 18, Dachau
+03 November 2007;21:00 Uhr;Quo Vadis; Schirmgasse 280, Landshut
+21 December 2007;20:00 Uhr;Kaffee Giesing;Bergstr. 5, München
+22 December 2007;20:00 Uhr;Kaffee Giesing;Bergstr. 5, München
+15 January 2008;20:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+22 February 2008;20:00 Uhr;Unionsbräu;Einsteinstr. 42, München
+20 March 2008;20:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+13 May 2008;21:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+24 May 2008;20:00 Uhr;Zipp;Kirchenstr. 5, Maisach
+03 July 2008;20:30 Uhr;Airbräu;Flughafen München
+09 September 2008;21:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+26 September 2008;21:00 Uhr;Privatveranstaltung
+24 October 2008;20:00 Uhr;Kaffee Giesing;Bergstr. 5, München
+25 October 2008;20:00 Uhr;Kaffee Giesing;Bergstr. 5, München
+10 December 2008;20:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+03 March 2009;20:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+14 March 2009;20:00 Uhr;Zipp;Kirchenstr. 5, Maisach
+07 May 2009;20:30 Uhr;Airbräu;Flughafen München
+14 May 2009;21:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+29 May 2009;11:00 Uhr;Pressekonferenz Eissportzentrum Olympiapark
+04 June 2009;20:00 Uhr;WestParkBräu;Am Westpark 6, Ingolstadt
+29 July 2009;21:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+01 August 2009;18:00 Uhr;Seewirt;Römerstr. 26, Bergkirchen, Dachau
+14 October 2009;20:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+09 December 2009;20:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+20 January 2010;20:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+18 February 2010;20:00 Uhr;WestParkBräu;Am Westpark 6, Ingolstadt
+04 March 2010;20:00 Uhr;Airbräu;Flughafen München
+10 March 2010;20:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+10 June 2010;21:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+15 July 2010;20:00 Uhr;Brauhaus 1516;Hauptbahnhof, Augsburg
+12 August 2010;21:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+19 November 2010;20:00 Uhr;Brückerl; Goteboldstrasse 189, München
+09 December 2010;20:00 Uhr;Kaffee Giesing ;Bergstr. 5, München
+10 December 2010;20:00 Uhr;Kaffee Giesing ;Bergstr. 5, München
+20 January 2011;20:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München
+03 February 2011;20:00 Uhr;Airbräu;Flughafen München
+21 April 2011;20:00 Uhr;Kilians Irish Pub;Frauenplatz 11, München

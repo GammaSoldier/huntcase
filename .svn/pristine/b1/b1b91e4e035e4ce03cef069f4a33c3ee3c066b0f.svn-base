@@ -1,0 +1,10 @@
+<table class="Content" align="center">
+	<tr>
+		<td class="Content" align="center" valign="top">
+
+		<%%OUTPUT%%>
+
+		</td>
+	</tr>
+</table>
+

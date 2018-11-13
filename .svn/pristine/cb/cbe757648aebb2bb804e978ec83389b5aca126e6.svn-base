@@ -1,0 +1,270 @@
+
+@font-face {
+  font-family: 'Gilc';
+  src: url('GILL_SEC_bold.woff');
+}
+
+@font-face {
+  font-family: 'Espk';
+  src: url('espek.woff');
+}
+
+
+
+body {
+	Color: #000000;
+	Font-Family: Verdana, Sans-Serif;
+	Font-Size: 10pt;
+/*	Background-Color: #605040;*/
+	background-image:url(Grafik/TexturePaper2.jpg);
+	Background-Color: #ffffff;
+}
+
+
+
+.contentblock {
+	color: #000000;
+	Font-Family: Verdana, Sans-Serif;
+	Font-Size: 10pt;
+    text-align: justify;
+/*	Background-Color: #e0e0d0;*/
+/*	background-image:url(Grafik/TexturePaper2.jpg); */
+/*    min-width: 880px; */
+    min-width: 800px;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+	min-width: 800px;
+/*    width: 80%;*/
+    margin: auto;
+}
+
+body.EMail {
+	Color: #000000;
+	Font-Family: Verdana, Sans-Serif;
+	Font-Size: 8pt;
+	Background-Color: #e0e0d0;
+
+}
+
+
+div {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+a:link {
+	Color: #a00000;
+}
+
+a:visited {
+	Color: #a00000;
+}
+
+a:hover {
+	Color: #a00000;
+}
+
+a img {
+  border: 0 none;
+}
+
+
+.Center {
+	Text-align: center;
+}
+
+
+.highlight {
+	font-size: 14px; 
+	font-weight: bold;
+	color: #a00000;
+}
+
+.name {
+    Font-family: Espk;
+	font-size: 26px; 
+	color: #000000;
+}
+
+
+h1 {
+    font-family: Gilc;
+	Font-Size: 26pt;
+	Font-weight: normal;
+	text-align: center;
+    color: #a00000;
+}
+
+h2 {
+    font-family: Gilc;
+	Font-Size: 26pt;
+	Font-weight: normal;
+	text-align: left;
+    color: #a00000;
+}
+
+h3 {
+    font-family: Gilc;
+	Font-Size: 20pt;
+	Font-weight: normal;
+	color: #000000;
+}
+
+h4 {
+    font-family: Gilc;
+	Font-Size: 18pt;
+	Font-weight: normal;
+	color: #000000;
+    margin: 10px 0px 16px 0px;
+}
+
+
+
+table.Content {
+	min-width: 800px;
+	min-height:1200px;
+    width: 80%;
+    margin: auto;
+    background: url(Grafik/Spots.png) scroll no-repeat top center;
+
+}
+
+table.Title {
+	background-image: url(Grafik/Title.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+/*	min-width: 800px;
+    width: 90%; 
+*/
+}
+
+table.listing {
+ 	width: 90%;
+    border: 2px solid #a00000;
+	border-spacing: 1px;
+	text-align: left;
+	vertical-align: top;
+}
+
+tr.odd {
+    border: #222 1px solid;
+}
+
+tr.even {
+	background-color: #ffffff;
+}
+
+
+
+
+td {
+	Font-Family: Veranda, Sans-Serif;
+	Font-Size: 11pt;
+   	vertical-align: top;
+}
+
+
+
+td.Title {
+	text-align: center;
+}
+
+td.ContentLeft {
+    padding: 0px 25px 10px 25px;
+	width: 280px;
+    vertical-align: top;
+}
+
+td.ContentRight {
+    padding: 0px 25px 10px 25px;
+/*    width: 100%;*/
+    vertical-align: top;
+}
+
+
+td.Head {
+	text-align: center;
+	border: none;
+	margin: 0px;
+}
+
+td.Menu {
+	text-align: center;
+	word-spacing: 20px;
+	border-style: none;
+/*	Background-Color: #000000;*/
+}
+
+td.Future {
+	color: #a00000;
+}
+
+
+
+textarea {
+	font-family: helvetica, arial, sans-serif;
+	background-color: #ffffff;
+}
+
+input {
+	font-family: helvetica, arial, sans-serif;
+	background: #fff;
+}
+
+
+
+#navcontainer
+{
+	vertical-align: middle;
+	text-align: center;
+}
+
+
+#navlist
+{
+	display: table; 
+	margin: 0 auto;
+	padding: 0px; 
+	height: 22px;
+	text-align: center;
+	list-style: none;
+}
+
+
+#navlist li
+{
+	padding: 0px;
+	vertical-align: middle;
+	display: inline;
+}
+
+
+
+
+#navlist li a
+{
+    Font-family: Espk;
+    margin-top: 4px;
+	display: inline-block; 
+	font-size: 20pt;
+/*    font-weight: bold;*/
+   	letter-spacing: 0.1em;
+	color: #000000;
+	text-decoration: none;
+	width: 105px;
+}
+
+
+#navlist li a:hover
+{
+	color: #a00000;
+    margin-top: 0px;
+/*	font-weight: bold;*/
+	font-size: 20pt;
+	letter-spacing: 0.2em;
+}
+

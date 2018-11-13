@@ -1,0 +1,29 @@
+<?php
+
+include_once 'database.php';
+include_once 'notify.php';
+
+
+execute();
+
+/***************************************************************************************************
+***************************************************************************************************/
+function execute()
+{
+	$i = 0;
+	
+	if( DBOpen( $Link ) ) {
+		$Result = mysql_query( "SELECT * FROM ".TAB_USERS );
+		while( $Row[$i] = mysql_fetch_array( $Result )) {
+			$i++;
+		}// while
+
+		DBClose( $Link );
+
+		for( $j = 0; $j < $i; $j++ ) {
+			NotifyUser( $Row[$j]['id'], $Row[$j]['email'], $Row[$j]['hash'], $Row[$j]['notified'] );
+		}// for $j
+	}// if
+}// execute
+
+?>

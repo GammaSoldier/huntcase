@@ -1,0 +1,27 @@
+<tr valign="top">
+
+	<td class="list" align="center">
+		<a target="_blank" href="<%%IMAGELINK%%>"><img border="0" src="<%%THUMB%%>" alt="<%%IMAGENAME%%>"></a>
+		<br>
+		<%%IMAGENAME%%>
+		
+	</td>
+
+	<td>
+		<a href="index.php?action=picturetop&amp;file=<%%IMAGENAME%%>&amp;page=<%%PAGE%%>" >top</a>
+		<br>
+		<a href="index.php?action=pictureup&amp;file=<%%IMAGENAME%%>&amp;page=<%%PAGE%%>" >up</a>
+		<br>
+		<a href="index.php?action=picturedown&amp;file=<%%IMAGENAME%%>&amp;page=<%%PAGE%%>" >down</a>
+		<br>
+		<a href="index.php?action=picturebottom&amp;file=<%%IMAGENAME%%>&amp;page=<%%PAGE%%>" >bottom</a>
+		<br>
+	</td>
+
+	<td>
+		<a href="index.php?action=picturedelete_ask&amp;file=<%%IMAGENAME%%>&amp;tn=TN<%%IMAGENAME%%>&amp;page=<%%PAGE%%>" >
+			<%%DELETETEXT%%>
+		</a>
+	</td>
+</tr>
+

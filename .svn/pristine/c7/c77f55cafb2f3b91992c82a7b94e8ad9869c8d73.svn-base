@@ -1,0 +1,25 @@
+<?php
+
+include_once( 'config.php' );
+include_once( 'templates.php' );
+
+if( !isset( $_REQUEST['page'] ) ) {
+	$Page = '';
+}// if
+else {
+	$Page = $_REQUEST['page'];
+}// else
+
+
+if( file_exists( TEMPLATE_PATH . $Page.'.htm' ) ) {
+	$Content = array( 'CONTENT' => GetTemplate( $Page.'.htm' ) );
+}// if
+else {
+	$Content = array( 'CONTENT' => GetTemplate( 'home.htm' ) );
+}// else
+
+// $Content = array( 'CONTENT' => GetTemplate( 'home.htm' ) );
+$Output = ParseTemplate( 'site.htm', $Content );
+
+echo $Output;
+?>

@@ -1,0 +1,87 @@
+
+
+<!-- Honeypot for spammers -->
+
+<div id="guestbook-form" style="display: none;">
+<form method="post" action="<%%GBSITE%%>" name="REPLY">
+Name <input type="text" size="40" maxlength="40" name="UserName" value=""><br>
+E-Mail <input type="text" size="40" maxlength="40" name="EMail" value=""><br>
+Homepage <input type="text" size="40" maxlength="40" name="Homepage" value=""><br>
+<textarea cols="60" rows="5" name="Post" class="textinput"></textarea><br>
+<input type="submit" name="Submit" value="Add">
+</form>
+</div>
+
+<table class="Content" align="center">
+	<tr>
+		<td class="Content" valign="top">
+			<img src="./Grafik/MicShadow.png" alt="Joe">
+		</td>
+
+		<td  class="Content" valign="top" width="100%">
+		
+			<h2>G&auml;stebuch</h2>
+
+<!-- intro -->
+			<%%INTRO%%>
+		
+<!-- form -->			
+			<form method="post" action="<%%GBSITE%%>">
+			<table>
+				<tr>
+					<td width="70" align="right">	
+						Name:
+					</td>
+					<td align="left">
+						<input type=hidden name="icq" value="">
+						<input type=text name="soheissisch" value="<%%NAME%%>" style="width: 400;">
+					</td>
+				</tr>
+				<tr valign="top">
+					<td align="right">
+						Homepage:
+					</td>
+					<td align="left">
+						<input type=text name="heimseit" value="<%%SITE%%>" style="width: 400;">
+					</td>
+				</tr>
+				<tr valign="top">
+					<td align="right">
+						Kommentar:
+					</td>
+					<td align="left">
+						<textarea name="ischsachsja" rows="5" style="width: 400;" cols="10"><%%TEXT%%></textarea>
+					</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2" align="center">
+						<input type="submit" name="submit" value="Absenden!">
+					</td>
+				</tr>
+			</table></form>
+		
+<!-- list -->		
+			<table align="center">
+				<tr valign="top">
+					<td align="center">
+						<br>
+						<br>
+						<p class="Center" >
+							<img src="Grafik/SeperatorSmall.jpg" ALT="___________">
+						</p>
+
+						<table width="400" align="center">
+							<%%ENTRIES%%>
+						</table>
+					</td>
+				</tr>
+			</table>
+
+			
+		</td>
+	</tr>
+</table>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
+

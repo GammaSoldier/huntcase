@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'Bebas';
+  src: url('bebasneue.eot?') format('eot') ,
+       url('bebasneue.woff') format('woff'), 
+       url('bebasneue.ttf')  format('truetype'),
+       url('bebasneue.svg#bebasneue') format('svg');
+}
+
+body {
+	Color: #000000;
+	Font-Family: Verdana, Sans-Serif;
+	Font-Size: 8pt;
+	Background-Color: #605040;
+}
+
+
+.contentblock {
+	color: #000000;
+	Font-Family: Verdana, Sans-Serif;
+	Font-Size: 8pt;
+	Background-Color: #e0e0d0;
+	background-image:url(Grafik/TexturePaper2.jpg);
+    width: 880px;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    background: url(Grafik/Header.png) scroll no-repeat top center;
+}
+
+body.EMail {
+	Color: #000000;
+	Font-Family: Verdana, Sans-Serif;
+	Font-Size: 8pt;
+	Background-Color: #e0e0d0;
+
+}
+
+a:link {
+	Color: #a00000;
+}
+
+a:visited {
+	Color: #a00000;
+}
+
+a:hover {
+	Color: #a00000;
+}
+
+a img {
+  border: 0 none;
+}
+
+
+.Center {
+	Text-align: center;
+}
+
+
+.highlight {
+	font-size: 14px; 
+	font-weight: bold;
+	color: #a00000;
+}
+
+.name {
+    Font-family: Bebas;
+	font-size: 20px; 
+	color: #000000;
+}
+
+
+h1 {
+    font-family: Bebas;
+	Font-Size: 26pt;
+	Font-weight: normal;
+	text-align: center;
+    color: #a00000;
+}
+
+h2 {
+    font-family: Bebas;
+	Font-Size: 26pt;
+	Font-weight: normal;
+	text-align: left;
+    color: #a00000;
+}
+
+h3 {
+    font-family: Bebas;
+	Font-Size: 20pt;
+	Font-weight: normal;
+	color: #000000;
+}
+
+
+
+
+table.Content {
+	width: 800px;
+    margin: auto;
+    background: url(Grafik/Spots.png) scroll no-repeat top center;
+
+}
+
+table.Title {
+	background-image: url(Grafik/Title.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	width: 800px;
+}
+
+table.listing {
+	width: 90%;
+    border: 2px solid #a00000;
+	border-spacing: 1px;
+	text-align: left;
+	vertical-align: top;
+}
+
+tr.odd {
+    border: #222 1px solid;
+}
+
+tr.even {
+	background-color: #ffffff;
+}
+
+
+
+
+td {
+	Font-Family: Veranda, Sans-Serif;
+	Font-Size: 9pt;
+   	vertical-align: top;
+}
+
+
+
+td.Title {
+	text-align: center;
+}
+
+td.ContentLeft {
+    padding: 25px;
+    vertical-align: top;
+}
+
+td.ContentRight {
+    padding: 25px;
+    width: 100%;
+    vertical-align: top;
+}
+
+
+td.Head {
+	text-align: center;
+	border: none;
+	margin: 0px;
+}
+
+td.Menu {
+	text-align: center;
+	word-spacing: 20px;
+	border-style: none;
+/*	Background-Color: #000000;*/
+}
+
+td.Future {
+	color: #a00000;
+}
+
+
+
+textarea {
+	font-family: helvetica, arial, sans-serif;
+	background-color: #ffffff;
+}
+
+input {
+	font-family: helvetica, arial, sans-serif;
+	background: #fff;
+}
+
+
+
+#navcontainer
+{
+	vertical-align: middle;
+	text-align: center;
+}
+
+
+#navlist
+{
+	display: table; 
+	margin: 0 auto;
+	padding: 0px; 
+	height: 22px;
+	text-align: center;
+	list-style: none;
+}
+
+
+#navlist li
+{
+	padding: 0px;
+	vertical-align: middle;
+	display: inline;
+}
+
+
+
+
+#navlist li a
+{
+    Font-family: Bebas;
+    margin-top: 4px;
+	display: inline-block; 
+	font-size: 16px;
+   	letter-spacing: 0.1em;
+	color: #000000;
+	text-decoration: none;
+	width: 95px;
+}
+
+
+#navlist li a:hover
+{
+	color: #a00000;
+    margin-top: 0px;
+/*	font-weight: bold;*/
+	font-size: 18px;
+	letter-spacing: 0.2em;
+}
+

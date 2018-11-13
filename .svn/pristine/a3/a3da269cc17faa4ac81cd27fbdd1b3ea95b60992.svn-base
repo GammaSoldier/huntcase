@@ -1,0 +1,245 @@
+
+
+body {
+	Color: #000000;
+	Font-Family: Verdana, Sans-Serif;
+	Font-Size: 8pt;
+	Background-Color: #000000;
+}
+
+
+.contentblock {
+	color: #000000;
+	Font-Family: Verdana, Sans-Serif;
+	Font-Size: 8pt;
+	Background-Color: #e0e0d0;
+	background-image:url(Grafik/TexturePaper.jpg);
+    width: 880px;
+    margin: auto;
+}
+
+
+
+body.EMail {
+	Color: #000000;
+	Font-Family: Verdana, Sans-Serif;
+	Font-Size: 8pt;
+	Background-Color: #e0e0d0;
+/*	background-image:url(Grafik/TexturePaper.jpg); */
+}
+
+a:link {
+
+	Color: #830000;
+/*	Color: #FEC516;*/
+}
+
+a:visited {
+	Color: #830000;
+}
+
+a:hover {
+	Color: #830000;
+}
+
+a img {
+  border: 0 none;
+}
+
+
+a.menu:link {
+	Color: #830000;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 11px;
+	letter-spacing: 0.4em;
+}
+
+a.menu:visited {
+	Color: #ff0000;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 11px;
+	letter-spacing: 0.4em;
+}
+
+a.menu:hover {
+	Color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+	letter-spacing: 0.4em;
+}
+
+
+
+.Center {
+	Text-align: center;
+}
+
+
+.highlight {
+	font-size: 14px; 
+	font-weight: bold;
+	color: #830000;
+}
+
+
+h1 {
+	Font-Size: 14pt;
+	Font-weight: bold;
+	text-align: center;
+/*	Color: #FF2020;*/
+    color: #830000
+}
+
+h2 {
+	Font-Size: 14pt;
+	Font-weight: bold;
+	text-align: left;
+/*	Color: #FF2020;*/
+    color: #830000
+}
+
+h3 {
+	font-size: 14px; 
+	font-weight: bold;
+	color: #000000;
+}
+
+
+
+
+table.Content {
+	width: 800px;
+    margin: auto;
+}
+
+table.Title {
+	background-image: url(Grafik/Title.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	width: 800px;
+}
+
+table.listing {
+	width: 90%;
+    border: 2px solid #830000;
+	border-spacing: 1px;
+	text-align: left;
+	vertical-align: top;
+}
+
+tr.odd {
+    border: #222 1px solid;
+}
+
+tr.even {
+	background-color: #ffffff;
+}
+
+
+
+td {
+	Font-Family: Veranda, Sans-Serif;
+	Font-Size: 9pt;
+
+}
+
+td.Title {
+	text-align: center;
+}
+
+td.ContentLeft {
+    padding: 25px;
+}
+
+td.ContentRight {
+    padding: 25px;
+    width: 100%;
+}
+
+
+td.Head {
+	text-align: center;
+	border: none;
+	margin: 0px;
+}
+
+td.Menu {
+	text-align: center;
+	word-spacing: 20px;
+	border-style: none;
+/*	Background-Color: #000000;*/
+}
+
+td.Future {
+	color: #830000;
+}
+
+
+
+textarea {
+	font-family: helvetica, arial, sans-serif;
+	background-color: #ffffff;
+}
+
+input {
+	font-family: helvetica, arial, sans-serif;
+	background: #fff;
+}
+
+
+
+#navcontainer
+{
+	vertical-align: middle;
+	text-align: center;
+}
+
+
+#navlist
+{
+	display: table; 
+	margin: 0 auto;
+	padding: 0px; 
+	height: 22px;
+	text-align: center;
+	list-style: none;
+}
+
+
+#navlist li
+{
+	padding: 0px;
+	vertical-align: middle;
+	display: inline;
+}
+
+
+
+
+#navlist li a
+{
+/*    font-family: WorldWideWeb, serif;*/
+	Font-Family: Veranda, Sans-Serif;
+    margin-top: 4px;
+	display: inline-block; 
+	font-weight: bold;
+	font-size: 11px;
+/*	letter-spacing: 0.1em; */
+	color: #000000;
+	text-decoration: none;
+	width: 95px;
+}
+
+
+#navlist li a:hover
+{
+	color: #830000;
+    margin-top: 0px;
+	font-weight: bold;
+	font-size: 14px;
+	letter-spacing: 0.2em;
+}
+
