@@ -50,7 +50,7 @@ body.EMail {
 }
 
 
-div {
+div, p {
     padding: 0px;
     margin: 0px;
 }
@@ -175,7 +175,7 @@ td.Title {
 
 td.ContentLeft {
     padding: 0px 25px 10px 25px;
-	width: 280px;
+	width: 250px;
     vertical-align: top;
 }
 
