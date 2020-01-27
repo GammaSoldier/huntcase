@@ -13,8 +13,24 @@
 
 body {
 	Color: #000000;
-	Font-Family: Verdana, Sans-Serif;
+/*	
+	Font-Family: Verdana, Sans-Serif; 
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+
+
+font-family: 
+     -apple-system,        // Safari for OS X and iOS (San Francisco)
+     BlinkMacSystemFont,   // Chrome < 56 for OS X (San Francisco)
+     "Segoe UI",           // Windows
+     Roboto,               // Android
+     "Helvetica Neue",     // Basic web fallback
+     Arial, 
+     sans-serif;	
+*/
+
+font-family: Tahoma, Verdana, Segoe, sans-serif;	 
 	Font-Size: 10pt;
+	 
 /*	Background-Color: #605040;*/
 	background-image:url(Grafik/TexturePaper2.jpg);
 	Background-Color: #ffffff;
@@ -24,7 +40,9 @@ body {
 
 .contentblock {
 	color: #000000;
+/*
 	Font-Family: Verdana, Sans-Serif;
+*/
 	Font-Size: 10pt;
     text-align: justify;
 /*	Background-Color: #e0e0d0;*/
