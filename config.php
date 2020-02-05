@@ -7,8 +7,8 @@
 if( $_SERVER[ 'SERVER_NAME' ] == 'localhost' ) {
 	define ( 'DB_HOST', 'localhost' );
 	define ( 'DB_USER', 'root' );
-	define ( 'DB_PASS', '' );
-	define ( 'DB', 'joe' );
+	define ( 'DB_PASS', 'admin' );
+	define ( 'DB', 'huntcase' );
 }// if 
 else {
 	define ( 'DB_HOST', 'localhost' );

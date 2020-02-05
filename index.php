@@ -4,21 +4,65 @@ include_once 'config.php';
 include_once 'templates.php';
 include_once 'database.php';
 
-if( !isset( $_REQUEST['page'] ) ) {
-    $Page = '';
-}// if
-else {
-    $Page = $_REQUEST['page'];
-}// else
+include_once 'dates.php';
+include_once 'music.php';
+include_once 'guestbook.php';
+include_once 'pictures.php';
 
 
-if( file_exists( TEMPLATE_PATH . $Page.'.htm' ) ) {
-    $Content = array( 'CONTENT' => GetTemplate( $Page.'.htm' ) );
-}// if
-else {
-    $Content = array( 'CONTENT' => GetTemplate( 'home.htm' ) );
-    
-    
+execute();
+
+
+	
+function execute() {
+	// check URL parameter 'page'
+	if( !isset( $_REQUEST['page'] ) ) {
+		$Page = 'home';
+	}// if
+	else {
+		$Page = $_REQUEST['page'];
+	}// else
+
+		
+	// check if template exists	
+	if( !file_exists( TEMPLATE_PATH . $Page.'.htm' ) ) {
+		$Page = 'home';
+	}// if
+		
+		
+	switch ($Page) {
+		case 'dates':
+			$subPageContent = displayDates();
+			break;
+		case 'music':
+			$subPageContent = displayMusic();
+			break;
+		case 'guestbook':
+			$subPageContent = displayGuestbook();
+			break;
+		case 'pictures':
+			$subPageContent = displayPictures();
+			break;
+		default:
+			$subPageContent = GetTemplate( $Page.'.htm' );
+	}// switch
+	$Content = array( 'CONTENT' => $subPageContent
+					 ,'NEWS'    => newsBox() );
+
+
+	$Output = ParseTemplate( 'site.htm', $Content );
+	echo $Output;
+
+}// execute
+
+	
+
+
+
+/***********************************************************************************************
+***********************************************************************************************/
+function newsBox() {
+	global $WDays, $Months;
     $Output = '';
     $Now = time();
 	$TimeDiff = 30 * 24 * 3600; // 30 days given in seconds
@@ -67,19 +111,8 @@ else {
 //        die( 'could not open db' );
     }// else
 
-
-    $Content = array( 'NEWS' => $Output);
-    $Output = ParseTemplate( 'home.htm', $Content );
-        
-    $Content = array( 'CONTENT' => $Output );
-    
-}// else
+	return $Output;
+}// newsBox
 
 
-
-$Output = ParseTemplate( 'site.htm', $Content );
-
-
-
-echo $Output;
 ?>
