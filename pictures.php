@@ -1,79 +1,75 @@
 <?php
-include 'templates.php';
-include 'database.php';
+include_once 'templates.php';
+include_once 'database.php';
 include_once 'config.php';
 
 
-if( isset( $_GET['Actual'] )) {
-	$Actual = $_GET['Actual'];
-}// if
-else {
-	$Actual = 0; 
-}// else
 
+function displayPictures() {
+	
+	$ThisFile = "index.php?page=pictures";
 
-$i = 0;
-//$FileList = 0;
-
-if( DBOpen() ) {
-	$Result = DBDo( "SELECT * FROM ".TAB_PICTURES." ORDER BY position ASC" );
-	if( $Result ) {
-		while( $Row = DBFetchAssoc() ) {
-			$FileList[$i] = $Row[ 'name' ];
-			$i++;
-		}// while
+	if( isset( $_GET['Actual'] )) {
+		$Actual = $_GET['Actual'];
 	}// if
-	DBClose();
-}// if
+	else {
+		$Actual = 0; 
+	}// else
 
 
+	$i = 0;
+	//$FileList = 0;
 
-$ThisFile = $_SERVER['SCRIPT_NAME'];
+	if( DBOpen() ) {
+		$Result = DBDo( "SELECT * FROM ".TAB_PICTURES." ORDER BY position ASC" );
+		if( $Result ) {
+			while( $Row = DBFetchAssoc() ) {
+				$FileList[$i] = $Row[ 'name' ];
+				$i++;
+			}// while
+		}// if
+		DBClose();
+	}// if
 
-
-
-// illegal values
-if( $Actual < 0 ) {
-	$Actual = 0;
-}// if
-if( isset($FileList ) && $Actual >= count($FileList) ) {
-	$Actual = count($FileList)-1;
-}// if
-
-
-// Navigation 	
-if( $Actual > 0) {
-	$Content = array( 'LINK' => $ThisFile.'?Actual='.($Actual-1) );
-	$OutputBack = ParseTemplate( 'pictures_back.htm', $Content );
-}// if 
-else {
-	$OutputBack = '';
-}// else
-
-if( $Actual < count($FileList)-1 ){
-	$Content = array( 'LINK' => $ThisFile.'?Actual='.($Actual+1) );
-	$OutputForward = ParseTemplate(  'pictures_forward.htm', $Content );
-}// if 
-else {
-	$OutputForward = '';
-}// else
+	// illegal values
+	if( $Actual < 0 ) {
+		$Actual = 0;
+	}// if
+	if( isset($FileList ) && $Actual >= count($FileList) ) {
+		$Actual = count($FileList)-1;
+	}// if
 
 
-// Content
-$Content = array( 
-	 'BACK' => $OutputBack
-	,'FORWARD' => $OutputForward 
-	,'IMAGE' => PIC_IMAGE_DIR.$FileList[$Actual] 
-	,'ALT' => $FileList[$Actual]
-);
+	// Navigation 	
+	if( $Actual > 0) {
+		$Content = array( 'LINK' => $ThisFile.'&Actual='.($Actual-1) );
+		$OutputBack = ParseTemplate( 'pictures_back.htm', $Content );
+	}// if 
+	else {
+		$OutputBack = '';
+	}// else
 
-$Output = ParseTemplate( 'pictures.htm', $Content );
+	if( $Actual < count($FileList)-1 ){
+		$Content = array( 'LINK' => $ThisFile.'&Actual='.($Actual+1) );
+		$OutputForward = ParseTemplate(  'pictures_forward.htm', $Content );
+	}// if 
+	else {
+		$OutputForward = '';
+	}// else
 
-$Content = array( 'CONTENT' => $Output );
-$Output = ParseTemplate( 'site.htm', $Content );
 
-echo $Output;
+	// Content
+	$Content = array( 
+		 'BACK' => $OutputBack
+		,'FORWARD' => $OutputForward 
+		,'IMAGE' => PIC_IMAGE_DIR.$FileList[$Actual] 
+		,'ALT' => $FileList[$Actual]
+	);
 
+	$Output = ParseTemplate( 'pictures.htm', $Content );
 
+	return $Output;
+
+}
 
 ?>

@@ -287,13 +287,14 @@ function ModifyLocation()
 {
 	$Output = true;
 
+	
 	if( DBOpen() ) {
 		$Query = "UPDATE ".TAB_LOCATIONS." SET name='"
-				.mysqli_escape_string($_REQUEST['locationname'])
+				.DBEscapeString($_REQUEST['locationname'])
 				."', address='"
-				.mysqli_escape_string($_REQUEST['locationaddress'])
+				.DBEscapeString($_REQUEST['locationaddress'])
 				."', remarks='"
-				.mysqli_escape_string($_REQUEST['locationremarks'])
+				.DBEscapeString($_REQUEST['locationremarks'])
 				."' WHERE id="
 				.$_REQUEST['locationid'];
 				

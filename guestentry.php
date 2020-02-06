@@ -3,7 +3,7 @@
 include('database.php');
 include('ctracker.php');
 
-$GuestbookSite = "guestbook.php";
+$GuestbookSite = "index.php?page=guestbook";
 
 
 
@@ -24,10 +24,10 @@ function GenerateEntry( $RedirectAddress )
 	$site = CreateUrl( $site );
 	
 	if( $name == "" ) {
-		$RedirectAddress .= '?error=1&name='.urlencode($name).'&site='.$site.'&text='.urlencode($text);
+		$RedirectAddress .= '&error=1&name='.urlencode($name).'&site='.$site.'&text='.urlencode($text);
 	}// if
 	else if ( $text == "" ) {
-		$RedirectAddress .= '?error=2&name='.urlencode($name).'&site='.$site.'&text='.urlencode($text);
+		$RedirectAddress .= '&error=2&name='.urlencode($name).'&site='.$site.'&text='.urlencode($text);
 	}// if
 	else {
 		
