@@ -8,7 +8,7 @@ include_once 'templates.php';
 ***************************************************************************************************/
 function NotifyUsers( $Test = false )
 {
-    $MailOriginator = MAIL_ADDRESS;
+    $MailOriginator = '"'.BAND_NAME.'" '.MAIL_ADDRESS;
     $MailSubject = BAND_NAME.' Infomail';
     
     $semi_rand = md5(time());
