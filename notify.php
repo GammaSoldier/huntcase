@@ -8,7 +8,7 @@ include_once 'templates.php';
 ***************************************************************************************************/
 function NotifyUsers( $Test = false )
 {
-    $MailOriginator = '"'.BAND_NAME.'" '.MAIL_ADDRESS;
+    $MailOriginator = MAIL_ADDRESS;
     $MailSubject = BAND_NAME.' Infomail';
     
     $semi_rand = md5(time());
@@ -31,9 +31,9 @@ function NotifyUsers( $Test = false )
 
            	if( DBOpen() ) {
                 if( $Test ) {
-                    $BCC .= 'test@joekoperski.de'.',';
+                    $BCC .= 'test@joekoperski.de';
                     
-                    var_dump( $BCC );
+                    var_dump( $MailOriginator );
                 }// if
                 else {
                     // generate address list
@@ -44,16 +44,16 @@ function NotifyUsers( $Test = false )
                         }// if
                     }// for $j
                 }// else
-//                $BCC .= 'Ende@joekoperski.de';
                 $Header  = 'MIME-Version: 1.0'."\r\n";
                 $Header .= 'Content-type: multipart/alternative; charset=iso-8859-1; boundary=' . $mime_boundary_header  . "\r\n";				
-                $Header .= 'From: '.$MailOriginator."\r\n";
+                $Header .= 'From: '. BAND_NAME. ' <' .$MailOriginator. '>' . "\r\n";
                 $Header .= 'Reply-To: '.$MailOriginator."\r\n";
                 $Header .= 'Bcc: '.$BCC."\r\n";
                 DBClose();
                 $MailResult = mail( NEWSLETTER_ADDRESS, $MailSubject, $Text, $Header,  '-f'.$MailOriginator  );
                 
                 if( $Test ) {
+                    var_dump( $Header );
                     var_dump( $MailResult);
                 }// if
 
